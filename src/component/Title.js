@@ -38,7 +38,7 @@ class Title extends Component{
         const title = TITLES[this.state.titleIndex];
 
         return(
-            <p>I Am {title} </p>
+            <p>I Am { title } </p>
         )
     }
 

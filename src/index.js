@@ -1,7 +1,23 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
+import {
+    Router, 
+    Switch, 
+    Route
+} from 'react-router-dom';
+import createBrowserHistory from 'history/createBrowserHistory';
+import App from './component/App';
+import Myapi from './component/Myapi';
 import './index.css';
 
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const history = createBrowserHistory();
+
+ReactDOM.render(
+    <Router history ={history}>
+        <Switch>
+            <Route exact={true} path="/" component={App} />
+            <Route path="/myapi" component={Myapi} />
+        </Switch>
+    </Router>, 
+    document.getElementById('root'));
