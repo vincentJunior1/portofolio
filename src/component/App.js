@@ -22,7 +22,7 @@ class App extends Component {
                     <h1> Hello </h1>
                     <p>I'm vincent junior</p>
                      <Title />
-                    <p>I looking for new job for Junior Fullstack Developer for now</p>
+                    <p>I looking for new job Software Engineer for now</p>
                     {this.state.displayBio ? (
                         <div>
                             <Fade top>
@@ -30,13 +30,12 @@ class App extends Component {
                                 <p>I live in Bekasi Harapan Indah</p>
                                 <p>My hobby is code and learn something new</p>
                                 <p>I use Javascript,python and php for my language programming</p>
-                                <p>This is example of my API</p>
                             </Fade>
-                                <button type="button" class="btn btn-dark" onClick={this.toggleDisplayBio}>Show Less</button>
+                                <button type="button" className="btn btn-info  hvr-sweep-to-top" onClick={this.toggleDisplayBio}>Show Less</button>
                         </div>
                     ) : (
                             <div>
-                                <button type="btn" class="btn btn-dark" onClick={this.toggleDisplayBio} >Read More</button>
+                                <button type="btn" className="btn btn-light hvr-sweep-to-bottom" onClick={this.toggleDisplayBio} >Read More</button>
                             </div>
                         )}
                 </div>

@@ -29440,21 +29440,18 @@ var Project = function Project(props) {
       description = _props$project.description,
       link = _props$project.link;
   return /*#__PURE__*/_react.default.createElement("div", {
-    style: {
-      display: 'inline-block',
-      width: 300,
-      margin: 10
-    }
-  }, /*#__PURE__*/_react.default.createElement("h3", null, title), /*#__PURE__*/_react.default.createElement("img", {
+    className: "card"
+  }, /*#__PURE__*/_react.default.createElement("img", {
     src: image,
-    alt: "profile",
-    style: {
-      width: 200,
-      height: 120
-    }
-  }), /*#__PURE__*/_react.default.createElement("p", null, description), /*#__PURE__*/_react.default.createElement("a", {
-    href: link
-  }, link));
+    className: "card-img-top",
+    alt: "profile"
+  }), /*#__PURE__*/_react.default.createElement("div", {
+    className: "card-body"
+  }, /*#__PURE__*/_react.default.createElement("h5", {
+    className: "card-title"
+  }, title), /*#__PURE__*/_react.default.createElement("p", {
+    className: "card-text"
+  }, description)));
 };
 
 var Projects = function Projects() {
@@ -29593,7 +29590,7 @@ function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.g
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-var TITLES = ['Software Engineer', 'Game Enthusiast', 'hardware enthusiast'];
+var TITLES = ['Software Engineer', 'Game Enthusiast', 'hardware enthusiast', '3D Designer(Lighting and Rendering)'];
 
 var Title = /*#__PURE__*/function (_Component) {
   _inherits(Title, _Component);
@@ -29752,15 +29749,15 @@ var App = /*#__PURE__*/function (_Component) {
         src: _foto.default,
         alt: "profile",
         className: "profile"
-      }), /*#__PURE__*/_react.default.createElement("h1", null, " Hello "), /*#__PURE__*/_react.default.createElement("p", null, "I'm vincent junior"), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "I looking for new job for Junior Fullstack Developer for now"), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Fade.default, {
+      }), /*#__PURE__*/_react.default.createElement("h1", null, " Hello "), /*#__PURE__*/_react.default.createElement("p", null, "I'm vincent junior"), /*#__PURE__*/_react.default.createElement(_Title.default, null), /*#__PURE__*/_react.default.createElement("p", null, "I looking for new job Software Engineer for now"), this.state.displayBio ? /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Fade.default, {
         top: true
-      }, /*#__PURE__*/_react.default.createElement("p", null, "I live in Bekasi Harapan Indah"), /*#__PURE__*/_react.default.createElement("p", null, "My hobby is code and learn something new"), /*#__PURE__*/_react.default.createElement("p", null, "I use Javascript,python and php for my language programming"), /*#__PURE__*/_react.default.createElement("p", null, "This is example of my API")), /*#__PURE__*/_react.default.createElement("button", {
+      }, /*#__PURE__*/_react.default.createElement("p", null, "I live in Bekasi Harapan Indah"), /*#__PURE__*/_react.default.createElement("p", null, "My hobby is code and learn something new"), /*#__PURE__*/_react.default.createElement("p", null, "I use Javascript,python and php for my language programming")), /*#__PURE__*/_react.default.createElement("button", {
         type: "button",
-        class: "btn btn-dark",
+        className: "btn btn-info  hvr-sweep-to-top",
         onClick: this.toggleDisplayBio
       }, "Show Less")) : /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("button", {
         type: "btn",
-        class: "btn btn-dark",
+        className: "btn btn-light hvr-sweep-to-bottom",
         onClick: this.toggleDisplayBio
       }, "Read More"))), /*#__PURE__*/_react.default.createElement("hr", null), /*#__PURE__*/_react.default.createElement(_Fade.default, {
         top: true
@@ -30006,7 +30003,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55466" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55843" + '/');
 
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);

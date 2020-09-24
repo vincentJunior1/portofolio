@@ -3,7 +3,8 @@ import React, {Component} from 'react';
 const TITLES = [
     'Software Engineer',
     'Game Enthusiast',
-    'hardware enthusiast'
+    'hardware enthusiast',
+    '3D Designer(Lighting and Rendering)'
 ];
 
 

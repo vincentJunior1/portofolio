@@ -29,12 +29,32 @@ h1,h2,h3,h4,h5 {
     border-radius: 100px;
 }
 
-.profile1{
-    
-}
-
 .row .data{
     text-align: left;
 }
 
+.card{
+    display: inline-block;
+    width: 300px;
+    margin: 10px;   
+    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* .card-img-top{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+} */
+
+
+.card-text{
+    font-size: 15px;
+}
+
+.btn {
+    width: 150px;
+}
+
+.btn:hover{
+    color:darkblue;
+    font: bold;
+}
 
