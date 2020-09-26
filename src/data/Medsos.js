@@ -1,6 +1,7 @@
 import github from '../assets/github_icon.png';
 import email from '../assets/email_icon.png';
 import linkedin from '../assets/linkedin_icon.png';
+import phone from '../assets/phone.png';
 
 
 const Medsos = [
@@ -22,7 +23,6 @@ const Medsos = [
         link: 'https://www.linkedin.com/in/vincent-junior-123752197/',
         image: linkedin
     },
-
 ]
 
 

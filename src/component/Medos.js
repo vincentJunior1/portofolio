@@ -16,7 +16,6 @@ const MEDSOS = props => {
 
 const Medos = () =>(
     <div>
-        <h3>Connect With Me!</h3>
         {
             Medsos.map(MEDSOSS => (
                     <MEDSOS key = {MEDSOSS.id} medsos = {MEDSOSS} />

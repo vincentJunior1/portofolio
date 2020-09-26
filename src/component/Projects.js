@@ -1,5 +1,7 @@
 import React from 'react';
 import PROJECTS from '../data/project';
+import Sidebar from './sidebar';
+import Fade from 'react-reveal/Fade';
 
 
 const Project = props => {
@@ -22,14 +24,19 @@ const Project = props => {
 
 const Projects = () => (
     <div>
-        <h2>Highlighted Projects</h2>
-        <div>
+        <Sidebar />
+        <section>
+        <Fade top>
+        <div className="jumbotron project">
+        <h2 className="project-header">Highlighted Projects</h2>
             {
                 PROJECTS.map(PROJECT => (
                     <Project key={PROJECT.id} project={PROJECT} />
                 ))
             }
         </div>
+        </Fade>
+        </section>
     </div>
 )
 
