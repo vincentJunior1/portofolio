@@ -90,7 +90,11 @@ body {
   min-height: 580px;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   font-family: "EconomicBold";
 }
 
@@ -110,6 +114,10 @@ h1, h2, h3, h4, h5 {
   width: 300px;
   margin: 10px;
   box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.desc-about {
+  width: 500px;
 }
 
 /* .card-img-top{
@@ -137,11 +145,13 @@ h1, h2, h3, h4, h5 {
   position: relative;
   float: left;
   left: 5%;
-  transform: translate(0%, 50%);
+  font-size: 22px;
+  font-weight: 700;
   color: white;
 }
 
 .about-me {
+  margin-top: 0px;
   text-align: left;
 }
 

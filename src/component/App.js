@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import Projects from './Projects';
+import React, { Component } from 'react';;
 import Medos from './Medos';
 import profile from '../assets/foto.jpg';
 import Title from './Title';
